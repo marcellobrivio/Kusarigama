@@ -1,0 +1,226 @@
+/*
+Kusarigama "Verderio" Skin
+Version: 1.1
+Author: Marcello Brivio
+Author URI: http://www.marcellobrivio.com/
+*/
+
+* {margin: 0; padding: 0;}
+body, html {font-family: Arial, Helvetica, sans-serif; background: #581; color: #555; font-size: 12px;}
+p {margin: 0; text-align: justify;}
+a {color:#581; padding-bottom: 2px; text-decoration: none;}
+a:hover {text-decoration: none; color: #360;}
+ul {list-style: none;}
+
+/* Top menu */
+#upperStrip {background: rgb(68,68,68); background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMjIyMjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(top,  rgba(68,68,68,1) 0%, rgba(34,34,34,1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(68,68,68,1)), color-stop(100%,rgba(34,34,34,1))); background: -webkit-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%); background: -o-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%); background: -ms-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%); background: linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#222222',GradientType=0 ); text-align: center; margin: 0; padding: 0; border-bottom: 1px solid #000;}
+#upperStrip ul {list-style: none; margin: 0; padding: 20px 0; font-size: 125%; font-weight: bold; text-align: center; white-space: nowrap;}
+#upperStrip ul li {display: inline; margin: 0 20px;}
+#upperStrip ul li a {text-decoration: none; padding: 0 0 14px; border-bottom: none; color: #fff;}
+#upperStrip ul li.current_page_item a {text-decoration: underline;}
+#upperStrip ul li a:hover {text-decoration: underline;}
+
+/* Main layout elements */
+#mainContainer {margin-left: auto; margin-right: auto; border-top: 1px solid #555; border-bottom: 2px solid #360; background: #000 url("verderio/background.jpg") no-repeat fixed center top;}
+#mainContainer .gradient {width: 936px; margin: 0 auto; padding: 0 20px 20px 20px; background: #fff; border-left: 2px solid #efefef; border-right: 2px solid #efefef;}
+#mainColumn {float: left; width: 620px; margin: 0; padding: 0;}
+#sidebar {float: right; width: 300px; margin: 0; padding: 0;}
+#footer {width: 980px; display: block; margin: 0 auto; background-color: #581; padding: 0;}
+
+/* Header with blog title and description */
+#header {margin: 40px 0 70px 0;}
+#header h1{font-size: 650%; color: #581; letter-spacing: -12px; text-transform: uppercase; margin: 0; padding: 0; line-height: 70%;}
+#header h2{font-size: 230%; color: #555; letter-spacing: -2px; font-weight: normal; margin: 0; padding: 0; line-height: 100%;}
+
+/* Standard post header and metadata */
+.post {padding-bottom: 20px; margin-bottom: 20px;}
+.post h2 {font-size: 300%; letter-spacing: -2px;}
+.post p.metadata {font-size: 108%; color: #999; margin-bottom:-16px;}
+.post p.category {margin-top: 16px; padding: 10px 0; text-align: center; font-size: 108%; color: #999; border-top: 1px dotted #581; border-bottom: 1px dotted #581;}
+
+/* Sticky posts */
+.sticky {background-color: #581; -moz-border-radius: 15px; border-radius: 15px; padding: 15px;}
+.sticky  p {color: #fff;}
+.sticky  a {color: #fff;}
+.sticky  a:hover {text-decoration: underline;}
+.sticky p.metadata {color: #eee;}
+.sticky p.continue {font-size: 150%; font-weight: bold; letter-spacing: -1px; margin-top: 15px; text-align: right;}
+
+/* Pages */
+.page {padding-bottom: 20px; margin-bottom: 20px;}
+.page h2 {font-size: 400%; letter-spacing: -3px; margin-bottom:-16px;}
+
+/* Post content. Applies to posts and pages */
+.content {font-size: 142%; line-height: 150%; color: #555; text-align: justify;}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {margin: 26px 0 -16px;}
+.content h1, .content h2, .content h3 {font-size: 250%; letter-spacing: -2px;}
+.content h4 {font-size: 200%; letter-spacing: -1px;}
+.content h5 {font-size: 170%;}
+.content h6 {font-size: 130%;}
+.content p {margin-top: 26px;}
+.content blockquote {margin-left: 30px; margin-right: 30px; padding: 0 10px;  font-size: 82%; border-left: 1px solid #581; border-right: 1px solid #581; line-height: 164%;}
+.content pre {width: 540px; white-space: pre-wrap; padding: 0 10px; margin: 26px auto; font-size: 100%; border-left: 1px solid #581; border-right: 1px solid #581;}
+.content pre.syntax {width: 620px; padding: 0; margin: 26px 0; font-size: 85%;}
+.content ul, #mainColumn .post .content ol {margin: 0 30px;}
+.content ul li {list-style-type: square;}
+.content ul ul li {list-style-type: circle;}
+.content ul ul ul li {list-style-type: disc;}
+.content ol li {list-style-type: decimal;}
+.content ol ol li {list-style-type: lower-roman;}
+.content ol ol ol li {list-style-type: lower-alpha;}
+.content img {border: 1px dotted #581; padding: 2px;}
+.content img:hover {border: 1px dotted #360;}
+.content .alignnone {display: inline; margin: 0;}
+.content .aligncenter {display: block; margin: 10px auto;}
+.content .alignleft {float: left; margin: 10px 20px 10px 0;}
+.content .alignright {float: right; margin: 10px 0 10px 20px;}
+.content p.post-pagination {text-align: right; margin-top: 10px; font-size: 117%;}
+.content .wp-caption {background-color: #efefef; padding: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+.content .wp-caption-text, .content .wp-gallery-caption, .content .gallery-caption {margin: 0; font-size: 100%; line-height: 125%; color: #999;}
+.content .gallery {padding-top: 30px;}
+
+/* Attachments */
+div.attachment {padding-bottom: 20px; margin-bottom: 20px;}
+div.attachment h2 {font-size: 300%; letter-spacing: -2px;}
+div.attachment p {margin-top: 0;}
+div.attachment p.attachment {margin-top: 26px}
+div.attachment p.metadata {font-size: 108%; color: #999; margin-bottom:-16px;}
+div.attachment p.category {margin-top: 16px; padding: 10px 0; text-align: center; font-size: 108%; color: #999; border-top: 1px dotted #6fb7e9; border-bottom: 1px dotted #6fb7e9;}
+
+
+/* Prev/Next navigation */
+.navigation a {font-size: 170%; letter-spacing: -1px;}
+.navleft {float: left;}
+.navright {float: right;}
+
+/* Comments */
+#comments {margin-top: -20px;}
+#comments h3 {font-size: 200%; letter-spacing: -1px; color: #999;}
+#comments h3.highlight {background-color: #581; -moz-border-radius: 15px; border-radius: 15px; padding: 15px; font-size: 200%; letter-spacing: -1px; color: #555; text-align: center;}
+#comments #respond {margin-top: 20px; padding: 20px; -moz-border-radius: 10px; border-radius: 10px; background-color: #efefef;}
+#comments #cancel-comment-reply-link {color: #fff; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #581; text-align: center; -moz-border-radius: 5px; border-radius: 5px; letter-spacing: 0; font-size: 100%;}
+#comments #cancel-comment-reply-link:hover {background-color: #360;}
+
+/* Comment List */
+.commentlist {padding-bottom: 10px;}
+.commentlist li {list-style-type: none; margin: 10px 0 20px 0; padding: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+.commentlist li.even {background-color: #dedede;}
+.commentlist li.odd {background-color: #cdcdcd;}
+.commentlist li li {list-style-type: none; margin: 20px 0 0 0;}
+.commentlist li .comment-author {padding: 2px 10px; background-color: #581; color: #fff; -moz-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; font-size: 117%; margin: -10px; border-bottom: 1px dotted #999;}
+.commentlist li .comment-author a, .commentlist li .comment-meta a {color: #fff;}
+.commentlist li .comment-author a:hover, .commentlist li .comment-meta a:hover {text-decoration: underline;}
+.commentlist li.bypostauthor .comment-author {background: #581 url('bright/little-star.png') no-repeat 8px 4px; padding-left: 22px;}
+.commentlist li .comment-author img.avatar {display: none;}
+.commentlist li p {font-size: 17px; line-height: 150%; color: #555; text-align: justify; margin-left: 5px; margin-right: 5px;}
+.commentlist li .comment-meta {text-align: right; margin: -19px 5px 10px 0;}
+.commentlist li .reply {text-align: right;}
+.commentlist li .reply .comment-reply-link {color: #fff; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #581; text-align: center; -moz-border-radius: 5px; border-radius: 5px;}
+.commentlist li .reply .comment-reply-link:hover {background-color: #360;}
+
+/* Comment Form */
+#commentform p {margin: 10px 0; font-size: 16px; text-indent: 5px;}
+#commentform p.comment-notes, #commentform p.form-allowed-tags, #commentform p.logged-in-as {font-size: 100%; font-style: italic; text-indent: 0; line-height: 133%;}
+#commentform input {display: block; -moz-border-radius: 15px; border-radius: 15px; font-size: 22px; letter-spacing: -1px; color: #666; width: 300px; padding: 2px 7px; margin: 0;}
+#commentform p.form-submit {text-align: center; margin-top: 20px;}
+#commentform input#submit {letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #581; border: 1px solid #581; width: 300px; text-align: center; margin: 0 auto;}
+#commentform input#submit:hover {background-color: #360; border: 1px solid #360;}
+#commentform textarea {display: block; -moz-border-radius: 15px; border-radius: 15px; padding: 5px; font-size: 22px; color: #666; font-family: Arial, Helvetica, sans-serif;}
+
+
+/* Form for password protected posts. Note: customized markup generated from functions.php */
+form.passwordform {margin: 40px 0;}
+form.passwordform p {margin: 3px 0; text-align: center; font-size: 100%;}
+form.passwordform label span {display: none;}
+form.passwordform label input.enterpass {font-size: 138%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
+form.passwordform input.submitpass {font-size: 138%; letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; background-color: #581; border: 1px solid #581; width: 102px; text-align: center; margin: 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
+form.passwordform input.submitpass:hover {background-color: #360; border: 1px solid #360;}
+
+#adv {margin: 20px 0 0 0; padding: 0;}
+#adv2 {margin: 20px 0 0 0; padding: 0;}
+
+/* Utility Classes */
+.hidden {display: none;}
+.center {text-align: center;}
+.cleaner {font-size: 0px; width: 100%; height: 0px; margin: 0 0 -1px; clear: both;}
+.separator {font-size: 0px; width: 100%; height: 0px; margin: 0; clear: both;}
+
+
+/* SIDEBAR WIDGETS */
+
+/* Default */
+#sidebar .widget {margin: 0; padding: 20px 0; border-bottom: 1px dotted #581; color: #999;}
+#sidebar .widget h3 {margin: 0 0 10px 0; font-size: 220%; letter-spacing: -2px; font-weight: bold;}
+#sidebar .widget ul li {list-style-type: none; margin: 8px 0; padding: 0; font-size: 117%;}
+#sidebar .widget ul ul li {margin-left: 16px;}
+
+/* Text Widget */
+#sidebar .widget div.textwidget {font-size: 117%; line-height: 143%; text-align: justify;}
+
+/* Search Form Widget */
+#sidebar .widget #searchform label {display: none;}
+#sidebar .widget #searchform input#s {font-size: 183%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
+#sidebar .widget #searchform input#searchsubmit {font-size: 183%; letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; background-color: #581; border: 1px solid #581; width: 102px; text-align: center; margin: 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
+#sidebar .widget #searchform input#searchsubmit:hover {background-color: #360; border: 1px solid #360;}
+
+/* Calendar Widget */
+#sidebar .widget #wp-calendar {width: 100%;}
+#sidebar .widget #wp-calendar caption {font-size: 133%; font-weight:bold; margin:0 2px; background-color:#581; color:#fff; padding: 2px; -moz-border-radius: 15px; border-radius: 15px;}
+#sidebar .widget #wp-calendar th {height: 22px; color:#fff; text-align: center; background-color: #581; -moz-border-radius: 10px; border-radius: 10px;}
+#sidebar .widget #wp-calendar td {height: 22px; text-align: center; background-color: #360; -moz-border-radius: 10px; border-radius: 10px; color: #fff;}
+#sidebar .widget #wp-calendar td.pad {border: none; background-color: transparent;}
+#sidebar .widget #wp-calendar td#prev, #sidebar div.widget #wp-calendar td#next {border: none; background-color: transparent; font-size: 133%;}
+#sidebar .widget #wp-calendar td#prev {text-align: left;}
+#sidebar .widget #wp-calendar td#next {text-align: right;}
+#sidebar .widget #wp-calendar a {font-weight: bold;}
+#sidebar .widget #wp-calendar td#prev a, #sidebar div.widget #wp-calendar td#next a {font-weight: normal;}
+
+/* Tag Cloud Widget */
+#sidebar .widget_tag_cloud div {text-align: justify; margin-top: -10px; line-height: 250%;}
+
+/* RSS Widget */
+#sidebar .widget_rss h3 a {color: #999;}
+#sidebar .widget_rss ul li {line-height: 150%; text-align: justify;}
+#sidebar .widget_rss span.rss-date {font-size: 85%; color: #fff;}
+#sidebar .widget_rss span.rssSummary {font-size: 85%; color: #999;}
+#sidebar .widget_rss cite {font-size: 100%; color: #999;}
+
+
+/* FOOTER WIDGETS */
+
+/* Standard widgets */
+#footer div.widget {width: 156px; float: left; padding: 20px; font-size: 92%; color: #ad2;}
+#footer div.widget h4 {margin-bottom: 10px; font-size: 92%;}
+#footer div.widget ul li a {color: #fff; font-weight: normal;}
+#footer div.widget ul li ul li {margin-left: 10px;}
+
+/* Special widget */
+#footer div.specialWidget {width: 156px; background-color: #360; color: #ad2; float: left; padding: 20px; font-size: 92%; -moz-border-radius: 0 0 15px 15px; border-radius: 0 0 15px 15px;}
+#footer div.specialWidget h4 {margin-bottom: 10px; font-size: 92%;}
+#footer div.specialWidget ul li a {color: #fff; font-weight: normal;}
+
+/* Common behaviours */
+#footer div.widget ul, #footer div.specialWidget ul {list-style-type: none;}
+#footer div.widget ul li, #footer div.specialWidget ul li {margin: 5px 0;}
+#footer div.widget ul li a:hover, #footer div.specialWidget ul li a:hover {text-decoration: underline;}
+
+/* Footer Extra Stuff */
+#footer #feedLinks {float: right; width: 196px;}
+#footer #feedLinks p {font-size: 92%; margin-top: 8px; padding: 0 0 0 18px;; text-align: left; height: 15px;}
+#footer #feedLinks p.rss {background: transparent url('bright/feed_icon.png') no-repeat 0 0;}
+#footer #feedLinks p.top {background: transparent url('bright/top_icon.png') no-repeat 0 0;}
+#footer #feedLinks p a {font-weight: normal; color: #fff;}
+#footer #feedLinks p a:hover {text-decoration: underline;}
+#footer #subMenu ul {list-style: none; margin: 20px 0; font-size: 92%; text-align: center; white-space: nowrap;}
+#footer #subMenu ul li {display: inline; margin: 0 8px;}
+#footer #subMenu ul li a {text-decoration: none; font-weight: normal; padding: 2px 8px; color: #fff;}
+#footer #subMenu ul li.current_page_item a {background-color: #360; color: #fff; -moz-border-radius: 10px 10px 10px 10px; border-radius: 10px 10px 10px 10px;}
+#footer #subMenu ul li a:hover {color: #ad2; text-decoration: underline;}
+#footer p.credits {border: none; background: #360; padding: 10px; text-align: center; font-size: 75%; margin: 0 auto 20px auto; color: #fff; -moz-border-radius: 15px 15px 15px 15px; border-radius: 15px 15px 15px 15px;}
+#footer p.credits a {color: #fff; font-weight: normal;}
+#footer p.credits a:hover {text-decoration: underline;}
+
+/* Skin Control */
+#skinControl {position: fixed; top: 200px; right: 0; padding: 0; background: transparent url("verderio/transparent.png") repeat; border: 1px solid #333; border-right: none; -moz-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px;}
+#skinControl li {margin: 10px;}
+#skinControl img {border: none;}
