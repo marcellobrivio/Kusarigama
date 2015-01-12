@@ -12,7 +12,7 @@
 			switchStylestyle(this.getAttribute("rel"));
 			return false;
 		});
-		var c = readCookie('style');
+		var c = readCookie('kusarigama_style');
 		if (c) switchStylestyle(c);
 	});
 
@@ -23,7 +23,7 @@
 			this.disabled = true;
 			if (this.getAttribute('title') == styleName) this.disabled = false;
 		});
-		createCookie('style', styleName, 7);
+		createCookie('kusarigama_style', styleName, 7);
 	}
 })(jQuery);
 // cookie functions http://www.quirksmode.org/js/cookies.html

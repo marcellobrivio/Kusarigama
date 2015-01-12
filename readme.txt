@@ -12,4 +12,6 @@ choose your favorite color scheme.
 
 3. Publish your first post!
 
-See http://www.marcellobrivio.com/wordpress/kusarigama/ for further instructions.
+----------------------------------------------
+DEMO: http://www.marcellobrivio.com/kusarigama
+----------------------------------------------

@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
 
 	<!--     H A I L   T O   Y O U ,    T H E   S O U R C E C O D E   V I E W E R !     -->
 	
@@ -13,6 +12,9 @@
 		<meta name="robots" content="all" />
 		<meta name="googlebot" content="index, follow, snippet, archive" />
 		<meta name="MSSmartTagsPreventParsing" content="true" />
+		<meta name="viewport" content="width=1024">
+		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 		
 		<!-- Skins management happens here -->
 		<?php if (get_option("kusarigama_color_scheme") == "Bright Angel") : ?>
@@ -35,7 +37,6 @@
 			<?php endif; ?>
 		<?php endif; ?>
 		
-		
 		<!-- Custom options override happens here -->
 		<style type="text/css">
 		<?php if (get_option("kusarigama_sidebar_position") == "Left") : ?>
@@ -49,8 +50,7 @@
 		
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.scrollTo.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<?php if (get_option("kusarigama_selectable_skin") == "1") : ?>
 			<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.styleswitch.js"></script>
 		<?php endif; ?>	
@@ -58,23 +58,25 @@
 		<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 		
 		<?php wp_head() ?>
-		
-		<?php echo get_option("kusarigama_google_analytics"); ?>
-		
+			
 	</head>
 	
 	<body <?php body_class(); ?>>
 
-		<div id="upperStrip">
-			<?php wp_nav_menu( array('theme_location' => 'main_nav', 'fallback_cb' => 'defaultNavigation', 'container' => 'menu', 'menu_class' => '')); ?>
-		</div>
+		<nav>
+			<div id="upperStrip">
+				<?php wp_nav_menu( array('theme_location' => 'main_nav', 'fallback_cb' => 'defaultNavigation', 'container' => 'menu', 'menu_class' => '')); ?>
+			</div>
+		</nav>
 		
 		<div id="mainContainer">
 			<div class="gradient">
 			
 				<div id="mainColumn">
 			
-					<div id="header">
-						<h1><a href="<?php echo home_url() ?>" title="<?php bloginfo('name'); ?> Home Page"><?php bloginfo('name'); ?></a></h1>
-						<h2><?php bloginfo('description'); ?></h2>
-					</div>
+					<header>
+						<div id="header">
+							<h1><a href="<?php echo home_url() ?>" title="<?php bloginfo('name'); ?> Home Page"><?php bloginfo('name'); ?></a></h1>
+							<h2><?php bloginfo('description'); ?></h2>
+						</div>
+					</header>

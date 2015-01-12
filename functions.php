@@ -20,11 +20,11 @@ function defaultNavigation() {
 // Custom fallback function to be call when the Special Footer Widget custom menu is empty...
 function specialWidget_fallback() {
 	echo '<ul>';
-	echo '<li><a href="' . home_url() . '/wp-admin/" title="Login to WordPress admin area" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Admin Area</a></li>';
-	echo '<li><a href="http://www.wordpress.org" title="WordPress, the best platform for bloging &amp; more" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">WordPress.org</a></li>';
-	echo '<li><a href="http://www.marcellobrivio.com/wordpress/kusarigama/" title="Kusarigama Theme for WordPress" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Kusarigama Theme</a></li>';
-	echo '<li><a href="http://codex.wordpress.org/" title="WordPress Codex" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Documentation</a></li>';
-	echo '<li><a href="http://wordpress.org/news/" title="Official WordPress development blog" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">WordPress Blog</a></li>';
+	echo '<li><a href="' . home_url() . '/wp-admin/" title="Login to WordPress admin area" target="_blank">Admin Area</a></li>';
+	echo '<li><a href="http://www.wordpress.org" title="WordPress, the best platform for bloging &amp; more" target="_blank">WordPress.org</a></li>';
+	echo '<li><a href="http://www.marcellobrivio.com/wordpress/kusarigama/" title="Kusarigama Theme for WordPress" target="_blank">Kusarigama Theme</a></li>';
+	echo '<li><a href="http://codex.wordpress.org/" title="WordPress Codex" target="_blank">Documentation</a></li>';
+	echo '<li><a href="http://wordpress.org/news/" title="Official WordPress development blog" target="_blank">WordPress Blog</a></li>';
 	echo '</ul>';
 }
 

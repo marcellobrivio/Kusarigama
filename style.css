@@ -2,7 +2,7 @@
 Theme Name: Kusarigama
 Theme URI: http://www.marcellobrivio.com/wordpress/kusarigama/
 Description: A clean and minimal theme for WordPress ninjas. Of course it is widget enabled and provides some extra customization options.
-Version: 1.1
+Version: 1.2
 Author: Marcello Brivio
 Author URI: http://www.marcellobrivio.com/
 License: GNU General Public License (GPL)
@@ -44,7 +44,7 @@ ul {list-style: none;}
 .post p.category {margin-top: 16px; padding: 10px 0; text-align: center; font-size: 108%; color: #ccc; border-top: 1px dotted #d9e021; border-bottom: 1px dotted #d9e021;}
 
 /* Sticky posts */
-.sticky {background-color: #d9e021; -moz-border-radius: 15px; border-radius: 15px; padding: 15px;}
+.sticky {background-color: #d9e021; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; padding: 15px;}
 .sticky  p {color: #555;}
 .sticky  a {color: #444;}
 .sticky  a:hover {text-decoration: underline;}
@@ -80,7 +80,7 @@ ul {list-style: none;}
 .content .alignleft {float: left; margin: 10px 20px 10px 0;}
 .content .alignright {float: right; margin: 10px 0 10px 20px;}
 .content p.post-pagination {text-align: right; margin-top: 10px; font-size: 117%;}
-.content .wp-caption {background-color: #111; padding: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+.content .wp-caption {background-color: #111; padding: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
 .content .wp-caption-text, .content .wp-gallery-caption, .content .gallery-caption {margin: 0; font-size: 100%; line-height: 125%; color: #999;}
 .content .gallery {padding-top: 30px;}
 
@@ -101,42 +101,42 @@ div.attachment p.category {margin-top: 16px; padding: 10px 0; text-align: center
 /* Comments */
 #comments {margin-top: -20px;}
 #comments h3 {font-size: 200%; letter-spacing: -1px; color: #ccc;}
-#comments h3.highlight {background-color: #d9e021; -moz-border-radius: 15px; border-radius: 15px; padding: 15px; font-size: 200%; letter-spacing: -1px; color: #555; text-align: center;}
-#comments #respond {margin-top: 20px; padding: 20px; -moz-border-radius: 10px; border-radius: 10px; background-color: #111;}
-#comments #cancel-comment-reply-link {color: #333; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #d9e021; text-align: center; -moz-border-radius: 5px; border-radius: 5px; letter-spacing: 0; font-size: 100%;}
+#comments h3.highlight {background-color: #d9e021; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; padding: 15px; font-size: 200%; letter-spacing: -1px; color: #555; text-align: center;}
+#comments #respond {margin-top: 20px; padding: 20px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; background-color: #111;}
+#comments #cancel-comment-reply-link {color: #333; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #d9e021; text-align: center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; letter-spacing: 0; font-size: 100%;}
 #comments #cancel-comment-reply-link:hover {background-color: #fc0;}
 
 /* Comment List */
 .commentlist {padding-bottom: 10px;}
-.commentlist li {list-style-type: none; margin: 10px 0 20px 0; padding: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+.commentlist li {list-style-type: none; margin: 10px 0 20px 0; padding: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
 .commentlist li.even {background-color: #444;}
 .commentlist li.odd {background-color: #555;}
 .commentlist li li {list-style-type: none; margin: 20px 0 0 0;}
-.commentlist li .comment-author {padding: 2px 10px; background-color: #111; color: #ccc; -moz-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; font-size: 117%; margin: -10px; border-bottom: 1px dotted #999;}
+.commentlist li .comment-author {padding: 2px 10px; background-color: #111; color: #ccc; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; font-size: 117%; margin: -10px; border-bottom: 1px dotted #999;}
 .commentlist li.bypostauthor .comment-author {background: #111 url('images/little-star.png') no-repeat 8px 4px; padding-left: 22px;}
 .commentlist li .comment-author img.avatar {display: none;}
 .commentlist li p {font-size: 142%; line-height: 150%; color: #fff; text-align: justify; margin-left: 5px; margin-right: 5px;}
-.commentlist li .comment-meta {text-align: right; margin: -19px 5px 10px 0;}
+.commentlist li .comment-meta {text-align: right; margin: -15px 5px 10px 0;}
 .commentlist li .reply {text-align: right;}
-.commentlist li .reply .comment-reply-link {color: #333; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #d9e021; text-align: center; -moz-border-radius: 5px; border-radius: 5px;}
+.commentlist li .reply .comment-reply-link {color: #333; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #d9e021; text-align: center; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
 .commentlist li .reply .comment-reply-link:hover {background-color: #fc0;}
 
 /* Comment Form */
 #commentform p {margin: 10px 0; font-size: 133%; text-indent: 5px;}
 #commentform p.comment-notes, #commentform p.form-allowed-tags, #commentform p.logged-in-as {font-size: 100%; font-style: italic; text-indent: 0; line-height: 133%;}
-#commentform input {display: block; -moz-border-radius: 15px; border-radius: 15px; font-size: 138%; letter-spacing: -1px; color: #666; width: 300px; padding: 2px 7px; margin: 0;}
+#commentform input {display: block; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; font-size: 138%; letter-spacing: -1px; color: #666; width: 300px; padding: 2px 7px; margin: 0;}
 #commentform p.form-submit {text-align: center; margin-top: 20px;}
 #commentform input#submit {letter-spacing: -1px; color: #333; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #d9e021; border: 1px solid #d9e021; width: 300px; text-align: center; margin: 0 auto;}
 #commentform input#submit:hover {background-color: #fc0; border: 1px solid #fc0;}
-#commentform textarea {display: block; -moz-border-radius: 15px; border-radius: 15px; padding: 5px; font-size: 138%; color: #666; font-family: Arial, Helvetica, sans-serif;}
+#commentform textarea {display: block; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; padding: 5px; font-size: 138%; color: #666; font-family: Arial, Helvetica, sans-serif;}
 
 
 /* Form for password protected posts. Note: customized markup generated from functions.php */
 form.passwordform {margin: 40px 0;}
 form.passwordform p {margin: 3px 0; text-align: center; font-size: 100%;}
 form.passwordform label span {display: none;}
-form.passwordform label input.enterpass {font-size: 138%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
-form.passwordform input.submitpass {font-size: 138%; letter-spacing: -1px; color: #333; padding: 2px; font-weight: bold; background-color: #d9e021; border: 1px solid #d9e021; width: 102px; text-align: center; margin: 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
+form.passwordform label input.enterpass {font-size: 138%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -webkit-border-radius: 15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
+form.passwordform input.submitpass {font-size: 138%; letter-spacing: -1px; color: #333; padding: 2px; font-weight: bold; background-color: #d9e021; border: 1px solid #d9e021; width: 102px; text-align: center; margin: 0; -webkit-border-radius: 0 15px 15px 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
 form.passwordform input.submitpass:hover {background-color: #fc0; border: 1px solid #fc0;}
 
 #adv {margin: 20px 0 0 0; padding: 0;}
@@ -155,22 +155,22 @@ form.passwordform input.submitpass:hover {background-color: #fc0; border: 1px so
 #sidebar .widget {margin: 0; padding: 20px 0; border-bottom: 1px dotted #d9e021; color: #ccc;}
 #sidebar .widget h3 {margin: 0 0 10px 0; font-size: 220%; letter-spacing: -2px; font-weight: bold;}
 #sidebar .widget ul li {list-style-type: none; margin: 8px 0; padding: 0; font-size: 117%;}
-#sidebar .widget ul ul li {margin-left: 16px;}
+#sidebar .widget ul ul li {margin-left: 16px; font-size: 100%;}
 
 /* Text Widget */
 #sidebar .widget div.textwidget {font-size: 117%; line-height: 143%; text-align: justify;}
 
 /* Search Form Widget */
 #sidebar .widget #searchform label {display: none;}
-#sidebar .widget #searchform input#s {font-size: 183%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
-#sidebar .widget #searchform input#searchsubmit {font-size: 183%; letter-spacing: -1px; color: #333; padding: 2px; font-weight: bold; background-color: #d9e021; border: 1px solid #d9e021; width: 102px; text-align: center; margin: 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
+#sidebar .widget #searchform input#s {font-size: 183%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -webkit-border-radius: 15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px; border: 1px solid #ddd;}
+#sidebar .widget #searchform input#searchsubmit {font-size: 183%; letter-spacing: -1px; color: #333; padding: 2px; font-weight: bold; background-color: #d9e021; border: 1px solid #d9e021; width: 102px; text-align: center; margin: 0; -webkit-border-radius: 0 15px 15px 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
 #sidebar .widget #searchform input#searchsubmit:hover {background-color: #fc0; border: 1px solid #fc0;}
 
 /* Calendar Widget */
-#sidebar .widget #wp-calendar {width: 100%;}
-#sidebar .widget #wp-calendar caption {font-size: 133%; font-weight:bold; margin:0 2px; background-color:#444; color:#ccc; padding: 2px; -moz-border-radius: 15px; border-radius: 15px;}
-#sidebar .widget #wp-calendar th {height: 22px; color:#ccc; text-align: center; background-color: #444; -moz-border-radius: 10px; border-radius: 10px;}
-#sidebar .widget #wp-calendar td {height: 22px; text-align: center; background-color: #666; -moz-border-radius: 10px; border-radius: 10px;}
+#sidebar .widget #wp-calendar {width: 100%; border-spacing: 2px; border-collapse: separate;}
+#sidebar .widget #wp-calendar caption {font-size: 133%; font-weight:bold; margin:0 2px; background-color:#444; color:#ccc; padding: 4px; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;}
+#sidebar .widget #wp-calendar th {height: 22px; color:#ccc; text-align: center; background-color: #444; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; vertical-align: middle;}
+#sidebar .widget #wp-calendar td {height: 22px; text-align: center; background-color: #666; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; vertical-align: middle;}
 #sidebar .widget #wp-calendar td.pad {border: none; background-color: transparent;}
 #sidebar .widget #wp-calendar td#prev, #sidebar div.widget #wp-calendar td#next {border: none; background-color: transparent; font-size: 133%;}
 #sidebar .widget #wp-calendar td#prev {text-align: left;}
@@ -198,7 +198,7 @@ form.passwordform input.submitpass:hover {background-color: #fc0; border: 1px so
 #footer div.widget ul li ul li {margin-left: 10px;}
 
 /* Special widget */
-#footer div.specialWidget {width: 156px; background-color: #d9e021; color: #000; float: left; padding: 20px; font-size: 92%; -moz-border-radius: 0 0 15px 15px; border-radius: 0 0 15px 15px;}
+#footer div.specialWidget {width: 156px; background-color: #d9e021; color: #000; float: left; padding: 20px; font-size: 92%; -webkit-border-radius: 0 0 15px 15px; -moz-border-radius: 0 0 15px 15px; border-radius: 0 0 15px 15px;}
 #footer div.specialWidget h4 {margin-bottom: 10px; font-size: 92%;}
 #footer div.specialWidget ul li a {color: #000; font-weight: normal;}
 
@@ -218,13 +218,13 @@ form.passwordform input.submitpass:hover {background-color: #fc0; border: 1px so
 #footer #subMenu ul {list-style: none; margin: 20px 0; font-size: 92%; text-align: center; white-space: nowrap;}
 #footer #subMenu ul li {display: inline; margin: 0 8px;}
 #footer #subMenu ul li a {text-decoration: none; font-weight: normal; padding: 2px 8px;}
-#footer #subMenu ul li.current_page_item a {background-color: #d9e021; color: #000; -moz-border-radius: 10px 10px 10px 10px; border-radius: 10px 10px 10px 10px;}
+#footer #subMenu ul li.current_page_item a {background-color: #d9e021; color: #000; -webkit-border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; border-radius: 10px 10px 10px 10px;}
 #footer #subMenu ul li a:hover {color: #d9e021; text-decoration: underline;}
-#footer p.credits {border: 1px solid #222; background: #191919; padding: 10px; text-align: center; font-size: 75%; margin: 0 auto 20px auto; color: #666; -moz-border-radius: 15px 15px 15px 15px; border-radius: 15px 15px 15px 15px;}
+#footer p.credits {border: 1px solid #222; background: #191919; padding: 10px; text-align: center; font-size: 75%; margin: 0 auto 20px auto; color: #666; -webkit-border-radius: 15px 15px 15px 15px; -moz-border-radius: 15px 15px 15px 15px; border-radius: 15px 15px 15px 15px;}
 #footer p.credits a {color: #666; font-weight: normal;}
 #footer p.credits a:hover {text-decoration: underline;}
 
 /* Skin Control */
-#skinControl {position: fixed; top: 200px; right: 0; padding: 0; background-color: #222; border: 1px solid #111; border-right: none; -moz-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px;}
+#skinControl {position: fixed; top: 200px; right: 0; padding: 0; background-color: #222; border: 1px solid #111; border-right: none; -webkit-border-radius: 10px 0 0 10px; -moz-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px;}
 #skinControl li {margin: 10px;}
-#skinControl img {border: none;}
+#skinControl img {border: none; -webkit-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px;}

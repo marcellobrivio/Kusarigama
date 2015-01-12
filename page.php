@@ -4,12 +4,14 @@
 
 						<?php while (have_posts()) : the_post(); ?>
 		
-							<div id="post-<?php the_ID(); ?>" class="post">
-								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-								<div class="content">
-									<?php the_content(); ?>
+							<article>
+								<div id="post-<?php the_ID(); ?>" class="post">
+									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+									<div class="content">
+										<?php the_content(); ?>
+									</div>
 								</div>
-							</div>
+							</article>
 		
 						<?php endwhile; ?>
 
