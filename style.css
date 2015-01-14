@@ -2,7 +2,7 @@
 Theme Name: Kusarigama
 Theme URI: http://www.marcellobrivio.com/wordpress/kusarigama/
 Description: A clean and minimal theme for WordPress ninjas. Of course it is widget enabled and provides some extra customization options.
-Version: 1.2
+Version: 1.2.1
 Author: Marcello Brivio
 Author URI: http://www.marcellobrivio.com/
 License: GNU General Public License (GPL)
@@ -21,7 +21,7 @@ ul {list-style: none;}
 #upperStrip {background-color: #000; text-align: center; margin: 0; padding: 0;}
 #upperStrip ul {list-style: none; margin: 0; padding: 20px 0; font-size: 125%; font-weight: bold; text-align: center; white-space: nowrap;}
 #upperStrip ul li {display: inline; margin: 0 20px;}
-#upperStrip ul li a {text-decoration: none; padding: 0 0 14px; border-bottom: 6px solid #000; color: #d9e021;}
+#upperStrip ul li a {text-decoration: none; padding: 0 0 13px; border-bottom: 6px solid #000; color: #d9e021;}
 #upperStrip ul li.current_page_item a {border-color: #d9e021;}
 #upperStrip ul li a:hover {border-color: #d9e021;}
 
