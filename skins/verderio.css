@@ -1,12 +1,12 @@
 /*
 Kusarigama "Verderio" Skin
-Version: 1.2.1
+Version: 2.0
 Author: Marcello Brivio
 Author URI: http://www.marcellobrivio.com/
 */
 
 * {margin: 0; padding: 0;}
-body, html {font-family: Arial, Helvetica, sans-serif; background: #581; color: #555; font-size: 12px;}
+body, html {font-family: Arial, Helvetica, sans-serif; background: #581; color: #555; font-size: 12px; -webkit-text-size-adjust: none;}
 p {margin: 0; text-align: justify;}
 a {color:#581; padding-bottom: 2px; text-decoration: none;}
 a:hover {text-decoration: none; color: #360;}
@@ -14,15 +14,15 @@ ul {list-style: none;}
 
 /* Top menu */
 #upperStrip {background: rgb(68,68,68); background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMjIyMjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(top,  rgba(68,68,68,1) 0%, rgba(34,34,34,1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(68,68,68,1)), color-stop(100%,rgba(34,34,34,1))); background: -webkit-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%); background: -o-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%); background: -ms-linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%); background: linear-gradient(top,  rgba(68,68,68,1) 0%,rgba(34,34,34,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#222222',GradientType=0 ); text-align: center; margin: 0; padding: 0; border-bottom: 1px solid #000;}
-#upperStrip ul {list-style: none; margin: 0; padding: 20px 0; font-size: 125%; font-weight: bold; text-align: center; white-space: nowrap;}
+#upperStrip ul {list-style: none; margin: 0; padding: 20px 0; font-size: 125%; font-weight: bold; text-align: center; white-space: nowrap; overflow: hidden;}
 #upperStrip ul li {display: inline; margin: 0 20px;}
 #upperStrip ul li a {text-decoration: none; padding: 0 0 13px; border-bottom: none; color: #fff;}
 #upperStrip ul li.current_page_item a {text-decoration: underline;}
 #upperStrip ul li a:hover {text-decoration: underline;}
 
 /* Main layout elements */
-#mainContainer {margin-left: auto; margin-right: auto; border-top: 1px solid #555; border-bottom: 2px solid #360; background: #000 url("verderio/background.jpg") no-repeat fixed center top;}
-#mainContainer .gradient {width: 936px; margin: 0 auto; padding: 0 20px 20px 20px; background: #fff; border-left: 2px solid #efefef; border-right: 2px solid #efefef;}
+#mainContainer {margin-left: auto; margin-right: auto; border-top: 1px solid #555; background: #efefef;}
+#mainContainer .gradient {width: 936px; margin: 0 auto; padding: 0 20px 20px 20px; background: #fff; border-left: 2px solid #fff; border-right: 2px solid #fff; box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.5), -12px 0 8px -4px rgba(0, 0, 0, 0.5);}
 #mainColumn {float: left; width: 620px; margin: 0; padding: 0;}
 #sidebar {float: right; width: 300px; margin: 0; padding: 0;}
 #footer {width: 980px; display: block; margin: 0 auto; background-color: #581; padding: 0;}
@@ -51,7 +51,7 @@ ul {list-style: none;}
 .page h2 {font-size: 400%; letter-spacing: -3px; margin-bottom:-16px;}
 
 /* Post content. Applies to posts and pages */
-.content {font-size: 142%; line-height: 150%; color: #555; text-align: justify;}
+.content {font-size: 150%; line-height: 150%; color: #555; text-align: justify;}
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {margin: 26px 0 -16px;}
 .content h1, .content h2, .content h3 {font-size: 250%; letter-spacing: -2px;}
 .content h4 {font-size: 200%; letter-spacing: -1px;}
@@ -123,17 +123,17 @@ div.attachment p.category {margin-top: 16px; padding: 10px 0; text-align: center
 #commentform p.comment-notes, #commentform p.form-allowed-tags, #commentform p.logged-in-as {font-size: 100%; font-style: italic; text-indent: 0; line-height: 133%;}
 #commentform input {display: block; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; font-size: 22px; letter-spacing: -1px; color: #666; width: 300px; padding: 2px 7px; margin: 0;}
 #commentform p.form-submit {text-align: center; margin-top: 20px;}
-#commentform input#submit {letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #581; border: 1px solid #581; width: 300px; text-align: center; margin: 0 auto;}
+#commentform input#submit {letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; text-transform: uppercase; background-color: #581; border: 1px solid #581; width: 300px; text-align: center; margin: 0 auto; -webkit-appearance: none;}
 #commentform input#submit:hover {background-color: #360; border: 1px solid #360;}
 #commentform textarea {display: block; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; padding: 5px; font-size: 22px; color: #666; font-family: Arial, Helvetica, sans-serif;}
 
 
 /* Form for password protected posts. Note: customized markup generated from functions.php */
 form.passwordform {margin: 40px 0;}
-form.passwordform p {margin: 3px 0; text-align: center; font-size: 100%;}
+form.passwordform p {margin: 3px 0; text-align: center; font-size: 90%;}
 form.passwordform label span {display: none;}
-form.passwordform label input.enterpass {font-size: 138%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -webkit-border-radius: 15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px;}
-form.passwordform input.submitpass {font-size: 138%; letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; background-color: #581; border: 1px solid #581; width: 102px; text-align: center; margin: 0; -webkit-border-radius: 0 15px 15px 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
+form.passwordform label input.enterpass {font-size: 138%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -webkit-border-radius: 15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px; border: 1px solid #ddd;}
+form.passwordform input.submitpass {font-size: 138%; letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; background-color: #581; border: 1px solid #581; width: 102px; text-align: center; margin: 0; -webkit-border-radius: 0 15px 15px 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0; -webkit-appearance: none;}
 form.passwordform input.submitpass:hover {background-color: #360; border: 1px solid #360;}
 
 #adv {margin: 20px 0 0 0; padding: 0;}
@@ -160,7 +160,7 @@ form.passwordform input.submitpass:hover {background-color: #360; border: 1px so
 /* Search Form Widget */
 #sidebar .widget #searchform label {display: none;}
 #sidebar .widget #searchform input#s {font-size: 183%; letter-spacing: -1px; color: #666; width: 170px; padding: 2px 7px; margin: 0; -webkit-border-radius: 15px 0 0 15px; -moz-border-radius: 15px 0 0 15px; border-radius: 15px 0 0 15px; border: 1px solid #ddd;}
-#sidebar .widget #searchform input#searchsubmit {font-size: 183%; letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; background-color: #581; border: 1px solid #581; width: 102px; text-align: center; margin: 0; -webkit-border-radius: 0 15px 15px 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0;}
+#sidebar .widget #searchform input#searchsubmit {font-size: 183%; letter-spacing: -1px; color: #fff; padding: 2px; font-weight: bold; background-color: #581; border: 1px solid #581; width: 102px; text-align: center; margin: 0; -webkit-border-radius: 0 15px 15px 0; -moz-border-radius: 0 15px 15px 0; border-radius: 0 15px 15px 0; -webkit-appearance: none;}
 #sidebar .widget #searchform input#searchsubmit:hover {background-color: #360; border: 1px solid #360;}
 
 /* Calendar Widget */
@@ -221,6 +221,6 @@ form.passwordform input.submitpass:hover {background-color: #360; border: 1px so
 #footer p.credits a:hover {text-decoration: underline;}
 
 /* Skin Control */
-#skinControl {position: fixed; top: 200px; right: 0; padding: 0; background: transparent url("verderio/transparent.png") repeat; border: 1px solid #333; border-right: none; -webkit-border-radius: 10px 0 0 10px; -moz-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px;}
+#skinControl {position: fixed; top: 200px; right: 0; padding: 0; background: #ccc; border: 1px solid #aaa; border-right: none; -webkit-border-radius: 10px 0 0 10px; -moz-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px;}
 #skinControl li {margin: 10px;}
 #skinControl img {border: none; -webkit-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px;}

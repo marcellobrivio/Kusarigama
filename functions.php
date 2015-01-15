@@ -91,10 +91,10 @@ $options = array (
 	),
 	array(
 		"name" => "Default font type",  
-		"desc" => "Select the preferred font type for $themename, choosing between serif (Arial, Helvetica) or sans-serif (Georgia).",
+		"desc" => "Select the preferred font typography combinarion for $themename, choosing between serif (Montserrat and Open Sans), sans-serif (Libre Baskerville and Nixie One) or mixed (Montserrat and Libre Baskerville).",
 		"id" => $shortname."_font_type",  
 		"type" => "radio",  
-		"options" => array("Sans-Serif", "Serif"),
+		"options" => array("Sans-Serif", "Serif", "Mixed"),
 		"std" => "Sans-Serif"
 	),
 	array(
@@ -121,7 +121,7 @@ $options = array (
 	),
 	array(
 		"name" => "Google Analytics",
-		"desc" => "Paste here the tracking code to have Google Analytics added in the head section.",
+		"desc" => "Paste here the tracking code to have Google Analytics added before the </body> closing tag.",
 		"id" => $shortname."_google_analytics",
 		"std" => "",
 		"type" => "textarea"

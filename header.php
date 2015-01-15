@@ -16,6 +16,33 @@
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 		
+		<!-- Typography management happens here -->
+		<?php if (get_option("kusarigama_font_type") == "Mixed") : ?>
+		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		body, html, #header h2 {font-family: 'Libre Baskerville', serif !important;}
+		h1, h2, h3, #upperStrip ul {font-family: 'Montserrat', sans-serif !important; font-weight: bold !important;}
+		#footer div.widget h4, #footer div.specialWidget h4, div#subMenu, #commentform input#submit, #sidebar .widget #searchform input#searchsubmit, .navigation a, #footer #feedLinks, form.passwordform input.submitpass {font-family: 'Montserrat', sans-serif !important; font-weight: bold !important; text-transform: uppercase !important;}
+		</style>
+		<?php elseif (get_option("kusarigama_font_type") == "Serif") : ?>
+		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		body, html {font-family: 'Libre Baskerville', serif !important;}
+		h1, h2, h3, #upperStrip ul {font-family: 'Nixie One', serif !important; font-weight: normal !important;}
+		#footer div.widget h4, #footer div.specialWidget h4, div#subMenu, #commentform input#submit, #sidebar .widget #searchform input#searchsubmit, .navigation a, #footer #feedLinks, form.passwordform input.submitpass {font-family: 'Nixie One', serif !important; text-transform: uppercase !important;}
+		</style>
+		<?php else : ?>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		body, html {font-family: 'Open Sans', sans-serif !important;}
+		h1, h2, h3, #upperStrip ul {font-family: 'Montserrat', sans-serif !important; font-weight: bold !important;}
+		#footer div.widget h4, #footer div.specialWidget h4, div#subMenu, #commentform input#submit, #sidebar .widget #searchform input#searchsubmit, .navigation a, #footer #feedLinks, form.passwordform input.submitpass {font-family: 'Montserrat', sans-serif !important; font-weight: bold !important; text-transform: uppercase !important;}
+		</style>
+		<?php endif; ?>
+		
 		<!-- Skins management happens here -->
 		<?php if (get_option("kusarigama_color_scheme") == "Bright Angel") : ?>
 		<link rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(); ?>/skins/bright.css" title="bright-angel" media="screen" />
@@ -37,16 +64,13 @@
 			<?php endif; ?>
 		<?php endif; ?>
 		
-		<!-- Custom options override happens here -->
-		<style type="text/css">
+		<!-- Column position override happens here -->
 		<?php if (get_option("kusarigama_sidebar_position") == "Left") : ?>
+		<style type="text/css">
 		#mainColumn {float: right;}
 		#sidebar {float: left;}
-		<?php endif; ?>		
-		<?php if (get_option("kusarigama_font_type") == "Serif") : ?>
-		body, html {font-family: Georgia, serif;}
-		<?php endif; ?>
 		</style>
+		<?php endif; ?>		
 		
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
