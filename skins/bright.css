@@ -71,7 +71,7 @@ ul {list-style: none;}
 .content img {border: 1px dotted #6fb7e9; padding: 2px;}
 .content img:hover {border: 1px dotted #3c8dc5;}
 .content .alignnone {display: inline; margin: 0;}
-.content .aligncenter {display: block; margin: 10px auto;}
+.content .aligncenter {display: block; margin: 20px auto 0; max-width: 614px; height: auto;}
 .content .alignleft {float: left; margin: 10px 20px 10px 0;}
 .content .alignright {float: right; margin: 10px 0 10px 20px;}
 .content p.post-pagination {text-align: right; margin-top: 10px; font-size: 117%;}

@@ -61,7 +61,6 @@
 				</nav>
 				
 				<p class="credits">&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> | Powered by <a href="http://www.wordpress.org/" title="WordPress, the best platform for bloging &amp; more" target="_blank">WordPress</a> and <a href="http://www.marcellobrivio.com/wordpress/kusarigama/" title="Kusarigama Theme for WordPress" target="_blank">Kusarigama</a>, a theme by Marcello Brivio | This page has been tested in all major browsers.</p>
-
 			</div>
 		</footer>
 		
@@ -74,6 +73,25 @@
 				</ul>
 			</div>
 		<?php endif; ?>
+		
+						
+		<script>
+		// Scroll to top with animation
+		$(function() {
+		  $('.scrollPage').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			  }
+			}
+		  });
+		});
+		</script>
 		
 		<?php echo get_option("kusarigama_google_analytics"); ?>
 		
