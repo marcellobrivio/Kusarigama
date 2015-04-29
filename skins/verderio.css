@@ -1,6 +1,6 @@
 /*
 Kusarigama "Verderio" Skin
-Version: 2.0
+Version: 2.1
 Author: Marcello Brivio
 Author URI: http://www.marcellobrivio.com/
 */
@@ -37,6 +37,7 @@ ul {list-style: none;}
 .post h2 {font-size: 300%; letter-spacing: -2px;}
 .post p.metadata {font-size: 108%; color: #999; margin-bottom:-16px;}
 .post p.category {margin-top: 16px; padding: 10px 0; text-align: center; font-size: 108%; color: #999; border-top: 1px dotted #581; border-bottom: 1px dotted #581;}
+.post p.continue {font-size: 150%; font-weight: bold; letter-spacing: -1px; margin-top: 15px; text-align: right;}
 
 /* Sticky posts */
 .sticky {background-color: #581; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; padding: 15px;}
